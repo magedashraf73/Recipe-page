@@ -31,10 +31,19 @@
       * {
         box-sizing: border-box;
       }
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Outfit", sans-serif;
         margin: 0;
         padding: 0;
+        color: hsl(30, 10%, 34%);
+      }
+      h1 {
+        color: hsl(24, 5%, 18%);
+        font-size: 2.5rem;
+        align-self: stretch;
       }
       h1,
       h2 {
@@ -74,6 +83,7 @@
       }
       .preparation h2 {
         color: hsl(332, 51%, 32%);
+        font-family: "Outfit", sans-serif;
       }
 
       h1 {
@@ -92,6 +102,9 @@
         padding: 25px;
         background-color: hsl(330, 100%, 98%);
       }
+      .preparation h2 {
+        font-family: ;
+      }
       .preparation ul {
         display: flex;
         flex-direction: column;
@@ -99,6 +112,9 @@
       }
       .preparation li::marker {
         color: hsl(332, 51%, 32%);
+      }
+      .ingredients {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
       }
       .ingredients ul {
         display: flex;
@@ -109,6 +125,9 @@
 
       li::marker {
         color: hsl(14, 45%, 36%);
+      }
+      .instructions {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
       }
       .instructions ol {
         display: flex;
@@ -143,6 +162,18 @@
       .ingredients,
       .instructions {
         margin: 30px 0;
+      }
+
+      .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: hsl(14, 45%, 36%);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -240,5 +271,7 @@
         </div>
       </div>
     </div>
+    <!-- SCROLL TO TOP -->
+    <a href="#" class="scroll-to-top"> ↑ </a>
   </body>
 </html>
